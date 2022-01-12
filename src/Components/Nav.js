@@ -10,7 +10,7 @@ export const Nav = (props) => {
 		<nav
 			style={{
 				flex: "1",
-				padding: "5vw 2vw",
+				padding: "2vh 2vw",
 				boxSizing: "border-box",
 			}}
 		>
