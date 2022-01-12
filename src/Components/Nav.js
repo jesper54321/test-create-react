@@ -7,37 +7,12 @@ export const Nav = (props) => {
 		{ title: "Kontakt os", url: "#" },
 	];
 	return (
-		<nav
-			style={{
-				flex: "1",
-				padding: "2vh 2vw",
-				boxSizing: "border-box",
-			}}
-		>
-			<ul
-				style={{
-					listStyle: "none",
-					gap: "1.4rem",
-					display: "flex",
-					flexDirection: "column",
-					fontSize: "1.5rem",
-					fontWeight: "700",
-				}}
-			>
+		<nav>
+			<ul style={{ flexDirection: "column" }}>
 				{links.map((item, index) => {
 					return (
 						<li key={index}>
-							<a
-								style={{
-									textDecoration: "none",
-									color: "inherit",
-									fontSize: "inherit",
-									fontWeight: "inherit",
-								}}
-								href={item.url}
-							>
-								{item.title}
-							</a>
+							<a href={item.url}>{item.title}</a>
 						</li>
 					);
 				})}

@@ -17,13 +17,10 @@ export const Footer = (props) => {
 				style={{
 					maxWidth: "100%",
 					textAlign: "center",
-					padding: "1vh 0",
 				}}
 			>
 				<ul
 					style={{
-						listStyle: "none",
-						display: "flex",
 						maxWidth: "100%",
 						justifyContent: "space-evenly",
 					}}
@@ -31,17 +28,7 @@ export const Footer = (props) => {
 					{links.map((item, index) => {
 						return (
 							<li key={index}>
-								<a
-									style={{
-										textDecoration: "none",
-										color: "inherit",
-										fontSize: "inherit",
-										fontWeight: "inherit",
-									}}
-									href={item.url}
-								>
-									{item.title}
-								</a>
+								<a href={item.url}>{item.title}</a>
 							</li>
 						);
 					})}
