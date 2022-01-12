@@ -6,9 +6,10 @@ export const Nav = (props) => {
 		{ title: "Ledige stillinger", url: "#" },
 		{ title: "Kontakt os", url: "#" },
 	];
+
 	return (
 		<nav>
-			<ul style={{ flexDirection: "column" }}>
+			<ul>
 				{links.map((item, index) => {
 					return (
 						<li key={index}>

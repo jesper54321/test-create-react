@@ -1,5 +1,28 @@
+#root {
+	display: flex;
+	flex-wrap: wrap;
+	> nav {
+		flex: 1;
+		> ul {
+			flex-direction: column;
+		}
+	}
+}
+footer {
+	background-image: linear-gradient(170deg, #fccb90 0%, #d57eeb 100%);
+	width: 100%;
+
+	> nav {
+		max-width: 100%;
+		text-align: center;
+		> ul {
+			max-width: 100%;
+			justify-content: space-evenly;
+		}
+	}
+}
+
 nav {
-	flex: 1;
 	padding: 2vh 2vw;
 	box-sizing: border-box;
 	ul {
@@ -18,4 +41,14 @@ nav {
 			}
 		}
 	}
+}
+
+main {
+	flex: 2;
+}
+
+header {
+	width: 100%;
+	text-align: center;
+	background-image: linear-gradient(170deg, #fccb90 0%, #d57eeb 100%);
 }
